@@ -4,8 +4,13 @@
   "type": "module",
   "author": "https://github.com/kkkaoru",
   "license": "Apache-2.0",
+  "scripts": {
+    "browsers": "browsers",
+    "reg-suit": "reg-suit"
+  },
   "devDependencies": {
     "@biomejs/biome": "1.7.0",
+    "@puppeteer/browsers": "2.2.2",
     "@storybook/addon-essentials": "8.0.8",
     "@storybook/addon-interactions": "8.0.8",
     "@storybook/addon-links": "8.0.8",
@@ -14,7 +19,14 @@
     "@storybook/nextjs": "8.0.8",
     "@storybook/react": "8.0.8",
     "@storybook/test": "8.0.8",
+    "http-server": "14.1.1",
+    "puppeteer": "22.6.5",
+    "reg-keygen-git-hash-plugin": "0.14.3",
+    "reg-notify-github-plugin": "0.14.3",
+    "reg-publish-s3-plugin": "0.14.3",
+    "reg-suit": "0.14.3",
     "storybook": "8.0.8",
+    "storycap": "5.0.0",
     "turbo": "1.13.2",
     "typescript": "5.4.5",
     "vite": "5.2.10",

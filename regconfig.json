@@ -1,0 +1,12 @@
+{
+  "core": {
+    "workingDir": ".reg",
+    "actualDir": "directory_contains_actual_images",
+    "thresholdRate": 0
+  },
+  "plugins": {
+    "reg-publish-s3-plugin": {
+      "bucketName": "vrt-reg-suit"
+    }
+  }
+}
