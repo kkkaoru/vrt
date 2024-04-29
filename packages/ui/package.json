@@ -2,10 +2,15 @@
   "name": "ui",
   "version": "1.0.0",
   "scripts": {
-    "storybook": "storybook dev -p 6006",
+    "dev": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "http-server": "http-server storybook-static -p 9001",
-    "storycap": "storycap --serverCmd \"http-server storybook-static -p 9001\" --chromiumPath $CHROMIUM_PATH",
-    "browsers-install-chromium": "browsers install chromium@1002918"
+    "storycap": "storycap --serverTimeout 60000 --captureTimeout 10000 --serverCmd \"http-server storybook-static -p 9001\" --chromiumPath $CHROMIUM_PATH",
+    "install-chromium": "browsers install chromium@1002918",
+    "generate-reg-config": "reg-config-generator",
+    "reg-suit": "reg-suit run"
+  },
+  "devDependencies": {
+    "reg-config-generator": "workspace:*"
   }
 }

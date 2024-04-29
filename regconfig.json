@@ -1,12 +1,21 @@
 {
   "core": {
     "workingDir": ".reg",
-    "actualDir": "directory_contains_actual_images",
+    "actualDir": "./packages/ui/__screenshots__",
     "thresholdRate": 0
   },
   "plugins": {
     "reg-publish-s3-plugin": {
-      "bucketName": "vrt-reg-suit"
+      "bucketName": "vrt-reg-suit",
+      "customDomain": "vrt-reg-suit.kkk4oru.com",
+      "sdkOptions": {
+        "region": "auto",
+        "endpoint": "https://78109ec18c7c85b194b19fb32e3bb149.r2.cloudflarestorage.com",
+        "credentials": {
+          "accessKeyId": "06c55ae0933db9bf6e3b2fda52f50dfa",
+          "secretAccessKey": "65f82ba735b0de5751cd3fc9db1cb4966ef763bec072c4392a6421be37da2ca8"
+        }
+      }
     }
   }
 }

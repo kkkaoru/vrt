@@ -1,0 +1,4 @@
+export const ENV_S3_BUCKET_NAME = 'AWS_S3_BUCKET_NAME';
+export const ENV_S3_CUSTOM_DOMAIN = 'AWS_S3_CUSTOM_DOMAIN';
+export const ENV_REGION = 'AWS_REGION';
+export const ENV_ENDPOINT = 'AWS_END_POINT';

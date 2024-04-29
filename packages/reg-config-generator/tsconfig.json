@@ -1,0 +1,10 @@
+{
+  "extends": "../../typescript-library.json",
+  "include": ["src"],
+  "exclude": ["src/**/*.test.*"],
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["vitest/globals"]
+  }
+}

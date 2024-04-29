@@ -3,6 +3,25 @@
   "pipeline": {
     "topo": {
       "dependsOn": ["^topo"]
+    },
+    "build-storybook": {
+      "dependsOn": ["topo"],
+      "outputs": ["storybook-static"]
+    },
+    "install-chromium": {
+      "outputs": ["chromium"]
+    },
+    "storycap": {
+      "dependsOn": ["build-storybook", "install-chromium"],
+      "outputs": ["__screenshots__"]
+    },
+    "generate-reg-config": {
+      "dependsOn": ["topo"],
+      "outputs": ["regconfig.json"]
+    },
+    "reg-suit": {
+      "dependsOn": ["generate-reg-config", "storycap"],
+      "outputs": [".reg"]
     }
   }
 }
