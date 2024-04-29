@@ -1,0 +1,16 @@
+{
+  "name": "reg-config-generator",
+  "version": "1.0.0",
+  "main": "dist/reg-config-generator.js",
+  "bin": "dist/reg-config-generator.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm-run-all -s build:vite build:tsc",
+    "build:vite": "vite build",
+    "build:tsc": "tsc",
+    "test": "vitest"
+  }
+}

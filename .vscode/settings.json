@@ -16,5 +16,10 @@
   "editor.codeActionsOnSave": {
     "quickfix.biome": "explicit",
     "source.organizeImports.biome": "explicit"
-  }
+  },
+  "cSpell.words": ["storycap"],
+  "vitest.enable": true,
+  "vitest.commandLine": "pnpm -w run vitest",
+  "vitest.exclude": ["**/node_modules/**", "**/dist/**", "**/.{idea,git,cache,output,temp}/**"],
+  "vitest.include": ["packages/features/**/*.test.ts"]
 }

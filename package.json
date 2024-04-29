@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "author": "https://github.com/kkkaoru",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "scripts": {
     "browsers": "browsers",
-    "reg-suit": "reg-suit"
+    "reg-suit": "turbo run reg-suit",
+    "vitest": "vitest"
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.0",
@@ -19,18 +20,22 @@
     "@storybook/nextjs": "8.0.8",
     "@storybook/react": "8.0.8",
     "@storybook/test": "8.0.8",
+    "@types/node": "20.12.7",
+    "@vitest/coverage-v8": "1.5.2",
     "http-server": "14.1.1",
+    "npm-run-all2": "6.1.2",
     "puppeteer": "22.6.5",
     "reg-keygen-git-hash-plugin": "0.14.3",
     "reg-notify-github-plugin": "0.14.3",
     "reg-publish-s3-plugin": "0.14.3",
     "reg-suit": "0.14.3",
+    "reg-suit-interface": "0.14.2",
     "storybook": "8.0.8",
     "storycap": "5.0.0",
     "turbo": "1.13.2",
     "typescript": "5.4.5",
     "vite": "5.2.10",
-    "vitest": "1.5.0"
+    "vitest": "1.5.2"
   },
   "dependencies": {
     "next": "14.2.2",
