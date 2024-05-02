@@ -4,6 +4,19 @@ on:
     branches:
       - main
   pull_request:
+env:
+  TZ: 'Asia/Tokyo'
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_END_POINT: ${{ secrets.AWS_END_POINT }}
+  AWS_S3_BUCKET_NAME: ${{ secrets.AWS_S3_BUCKET_NAME }}
+  AWS_S3_CUSTOM_DOMAIN: ${{ secrets.AWS_S3_CUSTOM_DOMAIN }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  REG_SUIT_GITHUB_CLIENT_ID: ${{ secrets.REG_SUIT_GITHUB_CLIENT_ID }}
+  TURBO_API: ${{ secrets.TURBOREPO_REMOTE_CACHE_API }}
+  TURBO_REMOTE_CACHE_SIGNATURE_KEY: ${{ secrets.TURBOREPO_REMOTE_CACHE_SIGNATURE_KEY }}
+  TURBO_TEAM: ${{ secrets.TURBOREPO_REMOTE_CACHE_TEAM }}
+  TURBO_TOKEN: ${{ secrets.TURBOREPO_REMOTE_CACHE_TOKEN }}
+  CHROMIUM_PATH: ${{ vars.CHROMIUM_PATH }}
 jobs:
   vrt:
     runs-on: ubuntu-latest
@@ -11,11 +24,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: workaround for detached HEAD
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          git checkout ${GITHUB_HEAD_REF#refs/heads/} || git checkout -b ${GITHUB_HEAD_REF#refs/heads/} && git pull
       - uses: pnpm/action-setup@v3
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
           cache: 'pnpm'
       - run: pwd
-      # - run: pnpm install --frozen-lockfile
-      # - run: pnpm -w run reg-suit
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm -w run turbo run build
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm -w run reg-suit

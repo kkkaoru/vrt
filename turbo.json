@@ -7,6 +7,9 @@
     "topo": {
       "dependsOn": ["^topo"]
     },
+    "build": {
+      "dependsOn": ["topo"]
+    },
     "build-storybook": {
       "dependsOn": ["topo"],
       "outputs": ["storybook-static"]
@@ -19,7 +22,7 @@
       "outputs": ["__screenshots__"]
     },
     "generate-reg-config": {
-      "dependsOn": ["topo"],
+      "dependsOn": ["topo", "build"],
       "outputs": ["regconfig.json"]
     },
     "reg-suit": {
