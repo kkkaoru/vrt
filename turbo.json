@@ -1,5 +1,8 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "remoteCache": {
+    "signature": true
+  },
   "pipeline": {
     "topo": {
       "dependsOn": ["^topo"]
@@ -22,6 +25,9 @@
     "reg-suit": {
       "dependsOn": ["generate-reg-config", "storycap"],
       "outputs": [".reg"]
+    },
+    "test": {
+      "dependsOn": ["topo"]
     }
   }
 }
