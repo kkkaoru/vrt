@@ -1,8 +1,14 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "remoteCache": {
+    "signature": true
+  },
   "pipeline": {
     "topo": {
       "dependsOn": ["^topo"]
+    },
+    "build": {
+      "dependsOn": ["topo"]
     },
     "build-storybook": {
       "dependsOn": ["topo"],
@@ -16,12 +22,15 @@
       "outputs": ["__screenshots__"]
     },
     "generate-reg-config": {
-      "dependsOn": ["topo"],
+      "dependsOn": ["topo", "build"],
       "outputs": ["regconfig.json"]
     },
     "reg-suit": {
       "dependsOn": ["generate-reg-config", "storycap"],
       "outputs": [".reg"]
+    },
+    "test": {
+      "dependsOn": ["topo"]
     }
   }
 }

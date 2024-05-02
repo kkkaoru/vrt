@@ -11,6 +11,7 @@
     "build": "npm-run-all -s build:vite build:tsc",
     "build:vite": "vite build",
     "build:tsc": "tsc",
-    "test": "vitest"
+    "vitest": "vitest",
+    "test": "env ENABLE_TEST_COVERAGE_THRESHOLDS=true vitest --run"
   }
 }

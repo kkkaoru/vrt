@@ -5,8 +5,10 @@
   "author": "https://github.com/kkkaoru",
   "license": "MIT",
   "scripts": {
-    "browsers": "browsers",
+    "turbo": "turbo",
+    "install-chromium": "turbo run install-chromium",
     "reg-suit": "turbo run reg-suit",
+    "test": "env ENABLE_TEST_COVERAGE_THRESHOLDS=true turbo run test",
     "vitest": "vitest"
   },
   "devDependencies": {

@@ -7,7 +7,11 @@
     "build-storybook": "storybook build",
     "http-server": "http-server storybook-static -p 9001",
     "storycap": "storycap --serverTimeout 60000 --captureTimeout 10000 --serverCmd \"http-server storybook-static -p 9001\" --chromiumPath $CHROMIUM_PATH",
-    "install-chromium": "browsers install chromium@1002918",
+    "install-chromium": "npm-run-all install-chromium:*",
+    "install-chromium:linux": "browsers install chromium@1002910 --platform linux",
+    "install-chromium:win64": "browsers install chromium@1002927 --platform win64",
+    "install-chromium:mac_arm": "browsers install chromium@1002918 --platform mac_arm",
+    "browsers": "browsers",
     "generate-reg-config": "reg-config-generator",
     "reg-suit": "reg-suit run"
   },
