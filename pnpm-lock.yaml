@@ -22,8 +22,8 @@ importers:
         specifier: 1.7.2
         version: 1.7.2
       '@puppeteer/browsers':
-        specifier: 2.2.2
-        version: 2.2.2
+        specifier: 2.2.3
+        version: 2.2.3
       '@storybook/addon-essentials':
         specifier: 8.0.8
         version: 8.0.8(@types/react@18.3.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1332,6 +1332,11 @@ packages:
 
   '@puppeteer/browsers@2.2.2':
     resolution: {integrity: sha512-hZ/JhxPIceWaGSEzUZp83/8M49CoxlkuThfTR7t4AoCu5+ZvJ3vktLm60Otww2TXeROB5igiZ8D9oPQh6ckBVg==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  '@puppeteer/browsers@2.2.3':
+    resolution: {integrity: sha512-bJ0UBsk0ESOs6RFcLXOt99a3yTDcOKlzfjad+rhFwdaG1Lu/Wzq58GHYCDTlZ9z6mldf4g+NTb+TXEfe0PpnsQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -7859,6 +7864,19 @@ snapshots:
       webpack-hot-middleware: 2.26.1
 
   '@puppeteer/browsers@2.2.2':
+    dependencies:
+      debug: 4.3.4
+      extract-zip: 2.0.1
+      progress: 2.0.3
+      proxy-agent: 6.4.0
+      semver: 7.6.0
+      tar-fs: 3.0.5
+      unbzip2-stream: 1.4.3
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - supports-color
+
+  '@puppeteer/browsers@2.2.3':
     dependencies:
       debug: 4.3.4
       extract-zip: 2.0.1
