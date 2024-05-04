@@ -23,7 +23,7 @@
     "@storybook/react": "8.0.9",
     "@storybook/test": "8.0.9",
     "@types/node": "20.12.8",
-    "@vitest/coverage-v8": "1.5.2",
+    "@vitest/coverage-v8": "1.6.0",
     "http-server": "14.1.1",
     "npm-run-all2": "6.1.2",
     "puppeteer": "22.7.1",
@@ -37,7 +37,7 @@
     "turbo": "1.13.3",
     "typescript": "5.4.5",
     "vite": "5.2.11",
-    "vitest": "1.5.2"
+    "vitest": "1.6.0"
   },
   "dependencies": {
     "next": "14.2.3",
