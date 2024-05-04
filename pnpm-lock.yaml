@@ -67,14 +67,14 @@ importers:
         specifier: 0.14.3
         version: 0.14.3
       reg-notify-github-plugin:
-        specifier: 0.14.3
-        version: 0.14.3
+        specifier: 0.14.4
+        version: 0.14.4
       reg-publish-s3-plugin:
-        specifier: 0.14.3
-        version: 0.14.3
+        specifier: 0.14.4
+        version: 0.14.4
       reg-suit:
-        specifier: 0.14.3
-        version: 0.14.3
+        specifier: 0.14.4
+        version: 0.14.4
       reg-suit-interface:
         specifier: 0.14.2
         version: 0.14.2
@@ -1162,10 +1162,6 @@ packages:
 
   '@fal-works/esbuild-plugin-global-externals@2.1.2':
     resolution: {integrity: sha512-cEee/Z+I12mZcFJshKcCqC8tuX5hG3s+d+9nZ3LabqKF1vKdF41B92pJVCBggjAGORAeOzyyDDKrZwIkLffeOQ==}
-
-  '@fastify/busboy@2.1.1':
-    resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
-    engines: {node: '>=14'}
 
   '@hapi/hoek@9.3.0':
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
@@ -5121,14 +5117,14 @@ packages:
   reg-keygen-git-hash-plugin@0.14.3:
     resolution: {integrity: sha512-qdFj4YKctQKyI1LpFYJelFzwOi7Z2mqXEUXdsPeHgk1eJ4ar44Lns8FD9feZFYFulDbl1V5c49hBZYRPItewIg==}
 
-  reg-notify-github-plugin@0.14.3:
-    resolution: {integrity: sha512-HjRnVYLoArLkFM7bpIVnH0CzLuAMlzRsgKjq41ck1b5VUmN+6fyDoXCA8I+Ezv0clXaenseCkP9o+z6PPC5LAQ==}
+  reg-notify-github-plugin@0.14.4:
+    resolution: {integrity: sha512-p3VZyyQuty6Kj+MzY+T/vZQP+QK0VjU2RwK8oR6iT/oKskrtxq3SGB1dxdsMYprttSG3y4hkxZenN07ZluvSPg==}
 
-  reg-publish-s3-plugin@0.14.3:
-    resolution: {integrity: sha512-zVN5g8n+JKuf82Ju08tRHfBc4k6MvLbdlB9M0A7zXL9mIDcYchfUX/vimd1aFH4jrWsug3XBK+NVgzvbIIQX4Q==}
+  reg-publish-s3-plugin@0.14.4:
+    resolution: {integrity: sha512-2M//em2oVQ2LkawFfKTWCnowyk+5cMY3X/go1Dk5ZEZQjOyt1E1KOxFaITOyOVLCFwF7YfmYHlp/wWeZbfPh/w==}
 
-  reg-suit-core@0.14.3:
-    resolution: {integrity: sha512-uVvZki1PV4cVweRIdxD2yfREWqi/IuYVdzpw9JH2yjcnHKZXS6PYtpycOo5XCVUVEVeKV0hYnnrSVfGVEEhiFQ==}
+  reg-suit-core@0.14.4:
+    resolution: {integrity: sha512-1QTqsMfFbWrlM4N7aRM+GTc5ilbPCh4ffDUpJzDKGcovpapiVUOzpUAsmT1Q34TrFHcWtx+ZEFKWMHgtomSW0Q==}
 
   reg-suit-interface@0.14.2:
     resolution: {integrity: sha512-Kgu0SsckdEa95ockolvqJGRiQ1lVfJYUJ2jGSnMBjm7tkIk4sQUiLSL9x2fzrOQS70fFb6uvlNZBdfcnl6FzTg==}
@@ -5136,8 +5132,8 @@ packages:
   reg-suit-util@0.14.3:
     resolution: {integrity: sha512-1Ddn2Nm2Ha7z07ubZeWuINjXRXr6uQWAdUpfbwt7cZyo8wlX2QBtjeet8WM0KVvrz9Ykj8suvUhhd3HLLyOYCQ==}
 
-  reg-suit@0.14.3:
-    resolution: {integrity: sha512-ku63/HOvHl/WI1lxOvbzPpy+4XNbYpNozdzxH0mk23OFDs2VUyctxGwFzUUKEGj5JhunBQn+JNCDu9zrABGU8A==}
+  reg-suit@0.14.4:
+    resolution: {integrity: sha512-2SdAe7MX5whfEvqkf29Z0dSbIlorfJhPPZt9WEHNvM+CtdPYZJjQaswh2Xjt7uMTrUey0FCELmC7nLY6zUMK3Q==}
     hasBin: true
 
   regenerate-unicode-properties@10.1.1:
@@ -5904,9 +5900,9 @@ packages:
   undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
 
-  undici@5.28.4:
-    resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
-    engines: {node: '>=14.0'}
+  undici@6.15.0:
+    resolution: {integrity: sha512-VviMt2tlMg1BvQ0FKXxrz1eJuyrcISrL2sPfBf7ZskX/FCEc/7LeThQaoygsMJpNqrATWQIsRVx+1Dpe4jaYuQ==}
+    engines: {node: '>=18.17'}
 
   unicode-canonical-property-names-ecmascript@2.0.0:
     resolution: {integrity: sha512-yY5PpDlfVIU5+y/BSCxAJRBIS1Zc2dDG3Ujq+sR0U+JjUevW2JhocOF+soROYDSaAezOzOKuyyixhD6mBknSmQ==}
@@ -6009,10 +6005,6 @@ packages:
   utils-merge@1.0.1:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
-
-  uuid@8.3.2:
-    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
-    hasBin: true
 
   uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
@@ -7729,8 +7721,6 @@ snapshots:
     optional: true
 
   '@fal-works/esbuild-plugin-global-externals@2.1.2': {}
-
-  '@fastify/busboy@2.1.1': {}
 
   '@hapi/hoek@9.3.0': {}
 
@@ -12781,24 +12771,24 @@ snapshots:
       reg-suit-util: 0.14.3
       shell-escape: 0.2.0
 
-  reg-notify-github-plugin@0.14.3:
+  reg-notify-github-plugin@0.14.4:
     dependencies:
       open: 8.4.2
       reg-gh-app-interface: 1.3.0
       reg-suit-util: 0.14.3
       tiny-commit-walker: 1.2.1
-      undici: 5.28.4
+      undici: 6.15.0
 
-  reg-publish-s3-plugin@0.14.3:
+  reg-publish-s3-plugin@0.14.4:
     dependencies:
       '@aws-sdk/client-s3': 3.564.0
       mkdirp: 1.0.4
       reg-suit-util: 0.14.3
-      uuid: 8.3.2
+      uuid: 9.0.1
     transitivePeerDependencies:
       - aws-crt
 
-  reg-suit-core@0.14.3:
+  reg-suit-core@0.14.4:
     dependencies:
       reg-cli: 0.18.5
       reg-suit-util: 0.14.3
@@ -12824,12 +12814,12 @@ snapshots:
       mime-types: 2.1.35
       mkdirp: 1.0.4
 
-  reg-suit@0.14.3:
+  reg-suit@0.14.4:
     dependencies:
       cp-file: 9.1.0
       ignore: 5.3.1
       inquirer: 8.2.6
-      reg-suit-core: 0.14.3
+      reg-suit-core: 0.14.4
       reg-suit-util: 0.14.3
       yargs: 17.0.1
 
@@ -13689,9 +13679,7 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  undici@5.28.4:
-    dependencies:
-      '@fastify/busboy': 2.1.1
+  undici@6.15.0: {}
 
   unicode-canonical-property-names-ecmascript@2.0.0: {}
 
@@ -13800,8 +13788,6 @@ snapshots:
   utila@0.4.0: {}
 
   utils-merge@1.0.1: {}
-
-  uuid@8.3.2: {}
 
   uuid@9.0.1: {}
 
