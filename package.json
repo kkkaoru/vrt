@@ -12,7 +12,7 @@
     "vitest": "vitest"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.2",
+    "@biomejs/biome": "1.7.3",
     "@puppeteer/browsers": "2.2.3",
     "@storybook/addon-essentials": "8.0.10",
     "@storybook/addon-interactions": "8.0.10",
