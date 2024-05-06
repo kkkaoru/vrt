@@ -26,7 +26,7 @@
     "@vitest/coverage-v8": "1.6.0",
     "http-server": "14.1.1",
     "npm-run-all2": "6.1.2",
-    "puppeteer": "22.7.1",
+    "puppeteer": "22.8.0",
     "reg-keygen-git-hash-plugin": "0.14.3",
     "reg-notify-github-plugin": "0.14.4",
     "reg-publish-s3-plugin": "0.14.4",
