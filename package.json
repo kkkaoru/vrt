@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@puppeteer/browsers": "2.2.4",
+    "@puppeteer/browsers": "2.3.0",
     "@storybook/addon-essentials": "8.2.6",
     "@storybook/addon-interactions": "8.2.6",
     "@storybook/addon-links": "8.2.6",
