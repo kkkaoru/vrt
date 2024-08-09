@@ -22,7 +22,7 @@
     "@storybook/nextjs": "8.2.8",
     "@storybook/react": "8.2.8",
     "@storybook/test": "8.2.8",
-    "@types/node": "20.14.14",
+    "@types/node": "20.14.15",
     "@vitest/coverage-v8": "1.6.0",
     "http-server": "14.1.1",
     "npm-run-all2": "6.2.2",
