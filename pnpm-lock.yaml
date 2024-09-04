@@ -82,8 +82,8 @@ importers:
         specifier: 8.2.9
         version: 8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))
       storycap:
-        specifier: 5.0.0
-        version: 5.0.0(@storybook/manager-api@8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))))(@storybook/preview-api@8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))))
+        specifier: 5.0.1
+        version: 5.0.1(@storybook/manager-api@8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))))(@storybook/preview-api@8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))))
       turbo:
         specifier: 1.13.4
         version: 1.13.4
@@ -5315,16 +5315,16 @@ packages:
     resolution: {integrity: sha512-S7Q/Yt4A+nu1O23rg39lQvBqL2Vg+PKXbserDWUR4LFJtfmoZ2xGO8oFIhJmvvhjUBvolw1q7QDeswPq2i0sGw==}
     hasBin: true
 
-  storycap@5.0.0:
-    resolution: {integrity: sha512-19URD5eV+bp+dLN+yTjPw2wcZKCRwGDlwdKi+LYolPuUJPCFyRAPpDKuDUp3Nt3mwEbF7KCLkzBzfzybl+GvoA==}
+  storycap@5.0.1:
+    resolution: {integrity: sha512-9oF/r7Nv3Nvpx0xwT/EKasJP9QpqSakRjbgsoQEmCokw5Mf4IEOoknW/X0HrEqb9GINvWKIONjvDupcT6yO6Rw==}
     engines: {node: '>=18'}
     hasBin: true
     peerDependencies:
       '@storybook/manager-api': ^7.0.0 || ^8.0.0
       '@storybook/preview-api': ^7.0.0 || ^8.0.0
 
-  storycrawler@5.0.0:
-    resolution: {integrity: sha512-2+r2vcfHfIqtbMpfS8QBPz2XFeI9637tW0BV8Y4UXEgxc5Tdb6FCIZDI4f58vBViYz8HS8Yh8f5oXAD0roVbxg==}
+  storycrawler@5.0.1:
+    resolution: {integrity: sha512-OBWwgTPq82WHjH3UnUMZU3pOr25gxn8+xBg2qbyOSW/YSdPhiFbexxUMpUBboLsh2O1xlsursbFvxypvlTr5bA==}
     engines: {node: '>=18'}
 
   stream-browserify@3.0.0:
@@ -6021,10 +6021,6 @@ packages:
   yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
     engines: {node: '>=12'}
-
-  yargs@16.2.0:
-    resolution: {integrity: sha512-D1mvvtDG0L5ft/jGWkLpG1+m0eQxOfaBvTNELraWj22wSVUMWxZUvYgJYcKh6jGGIkJFhH4IZPQhR4TKpc8mBw==}
-    engines: {node: '>=10'}
 
   yargs@17.0.1:
     resolution: {integrity: sha512-xBBulfCc8Y6gLFcrPvtqKz9hz8SO0l1Ni8GgDekvBX2ro0HRQImDGnikfc33cgzcYUSncapnNcZDjVFIH3f6KQ==}
@@ -12456,7 +12452,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  storycap@5.0.0(@storybook/manager-api@8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))))(@storybook/preview-api@8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))):
+  storycap@5.0.1(@storybook/manager-api@8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5))))(@storybook/preview-api@8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))):
     dependencies:
       '@storybook/manager-api': 8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
       '@storybook/preview-api': 8.2.9(storybook@8.2.9(@babel/preset-env@7.24.5(@babel/core@7.24.5)))
@@ -12465,8 +12461,8 @@ snapshots:
       puppeteer-core: 9.1.1
       rimraf: 5.0.5
       sanitize-filename: 1.6.3
-      storycrawler: 5.0.0
-      yargs: 16.2.0
+      storycrawler: 5.0.1
+      yargs: 17.7.2
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -12474,7 +12470,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  storycrawler@5.0.0:
+  storycrawler@5.0.1:
     dependencies:
       chalk: 2.4.2
       puppeteer-core: 9.1.1
@@ -13201,16 +13197,6 @@ snapshots:
   yargs-parser@20.2.9: {}
 
   yargs-parser@21.1.1: {}
-
-  yargs@16.2.0:
-    dependencies:
-      cliui: 7.0.4
-      escalade: 3.1.2
-      get-caller-file: 2.0.5
-      require-directory: 2.1.1
-      string-width: 4.2.3
-      y18n: 5.0.8
-      yargs-parser: 20.2.9
 
   yargs@17.0.1:
     dependencies:
